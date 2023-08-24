@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors : {
         bggray : "#121212",
-        textgreen : '#2DD293'
+        textgreen : '#2DD293',
+        darkgreen : '#1f7152',
       },
       backgroundImage : {
         hero_pattern : "../public/assets/Pattern.png"

@@ -1,7 +1,7 @@
 const data = [{
     Day : "Monday",
     Date: "21 Aug 2023",
-    B: ["POHA","SEV","Cut Onion Lemon", "PAPAYA",],
+    B: ["POHA","SEV","CUT ONION LEMON", "PAPAYA",],
     L: ["PAPDI CHAAT", "GREEN BEANS", "RAJMA CHAWAL", "RED MASOOR DAL", "CHAPATI", "PLAIN RICE", "SAMBAR", "MANGO LASSI"],
     D: ["Cut Onion Lemon", "Khata Meetha Pumpkin", "Chole Masala", "Puri", "Jeera Rice", "Rasam",""]
 },

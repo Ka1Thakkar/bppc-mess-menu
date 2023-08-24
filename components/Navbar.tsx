@@ -36,10 +36,10 @@ const Nav = () => {
         },
     ]
     return (
-        <nav className="fixed bottom-0 z-40 lg:left-0 lg:top-0 flex lg:flex-col justify-around lg:h-screen w-screen lg:w-auto items-center bg-textgreen rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg border-t-4 lg:border-t-0 border-black">
+        <nav className="fixed bottom-0 z-40 lg:left-0 lg:top-0 flex lg:flex-col justify-around lg:h-screen w-screen lg:w-auto items-center bg-bggray rounded-t-lg lg:rounded-tl-none lg:rounded-r-lg border-t-4 lg:border-t-0 border-black">
             {days.map((day, key)=>(
                 <Link href={day.link} className="h-full w-full">
-                <button className="text-black py-3 px-5 font-bold text-xl hover:bg-black hover:text-textgreen w-full h-full transition-all ease-in-out">
+                <button className="text-white py-3 px-5 font-bold text-xl hover:bg-black hover:text-textgreen w-full h-full transition-all ease-in-out">
                     {day.letter}
                 </button>
                 </Link>
