@@ -14,8 +14,8 @@ const SSMSLogo = () => {
                 <Image src={logo} alt="SSMS logo" className="rounded-full h-[50px] w-[50px] lg:h-[60px] lg:w-[60px]" />
                 </Button>
             </DropdownTrigger>
-            <DropdownMenu aria-label="Static Actions" className="bg-black text-white rounded-lg text-lg px-5 py-5">
-                <DropdownItem className=" border-b-2 border-b-white pb-2"><Link href={"/"}><button>Feedback</button></Link></DropdownItem>
+            <DropdownMenu aria-label="Static Actions" className="bg-darkgreen text-black rounded-lg text-lg px-5 py-5">
+                <DropdownItem className=" border-b-4 border-b-black pb-2"><Link href={"/"}><button>Feedback</button></Link></DropdownItem>
                 <DropdownItem className=" pt-2"><Link href={"/"}><button>Developers</button></Link></DropdownItem>
             </DropdownMenu>
         </Dropdown>
