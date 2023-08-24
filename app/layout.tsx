@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='relative'>
-      <Nav />
+      <div className='absolute bottom-0'>
+        <Nav />
+      </div>
       <body className={inter.className}>{children}</body>
     </html>
   )
