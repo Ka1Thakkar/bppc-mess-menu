@@ -11,7 +11,7 @@ const SSMSLogo = () => {
                 <Button 
                 variant="bordered" 
                 >
-                <Image src={logo} alt="SSMS logo" className="rounded-full h-[50px] w-[50px] lg:h-[75px] lg:w-[75px]" />
+                <Image src={logo} alt="SSMS logo" className="rounded-full h-[50px] w-[50px] lg:h-[60px] lg:w-[60px]" />
                 </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions" className="bg-black text-white rounded-lg text-lg px-5 py-5">
