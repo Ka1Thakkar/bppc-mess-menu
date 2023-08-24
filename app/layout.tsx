@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='relative'>
-      <div className='absolute bottom-0'>
+    <html lang="en" className=''>
+      <div className='absolute bottom-0 lg:left-0 lg:top-0'>
         <Nav />
       </div>
       <body className={inter.className}>{children}</body>
