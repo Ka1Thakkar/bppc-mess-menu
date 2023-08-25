@@ -16,7 +16,7 @@ const SSMSLogo = () => {
                 </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions" className="bg-darkgreen text-black rounded-lg text-lg px-5 py-5">
-                <DropdownItem className=""><Link href={"/gc-members"}><button>GC Members</button></Link></DropdownItem>
+                <DropdownItem className=" border-b-4 border-b-black pb-2"><Link href={"/gc-members"}><button>GC Members</button></Link></DropdownItem>
                 {/* <DropdownItem className=" pt-2"><Link href={"/"}><button>Developers</button></Link></DropdownItem> */}
             </DropdownMenu>
         </Dropdown>
