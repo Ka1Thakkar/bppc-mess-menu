@@ -41,17 +41,17 @@ const gc_members = [
     },
     {
         name : "Advik Singh",
-        position : "Member, AMC",
+        position : "AMC",
         contact : "9717987272",
     },
     {
         name : "Liyasha Agarwal",
-        position : "Member, AMC",
+        position : "AMC",
         contact : "9993649250",
     },
     {
         name : "Varad Maniyar",
-        position : "Member, AMC",
+        position : "AMC",
         contact : "9673501333",
     },
 ]
