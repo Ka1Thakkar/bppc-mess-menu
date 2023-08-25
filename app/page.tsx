@@ -29,7 +29,7 @@ export default function Home() {
       <div className='absolute right-5 top-10'>
         <SSMSLogo />
       </div>
-      <section className='absolute w-screen min-h-screen px-10 lg:px-20 xl:px-40 flex flex-col items-center justify-center pt-10 lg:pt-10'>
+      <section className='absolute w-screen min-h-screen px-10 lg:px-20 xl:px-40 flex flex-col items-center justify-center pt-12 lg:pt-0'>
       <h1 className={pacifico.className + " text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10"}>Today's Mess Menu</h1>
       <div className='pb-10'>
         <h1 className='text-3xl font-medium text-gray-400 pt-2'>{date}</h1>
