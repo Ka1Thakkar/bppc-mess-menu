@@ -22,7 +22,7 @@ const gc_members = [
     {
         name : "Raj Shekhar",
         position : "CVR Mess Rep",
-        contact : "",
+        contact : "9910043969",
     },
     {
         name : "Aarya Garg",
