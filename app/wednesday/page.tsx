@@ -41,13 +41,13 @@ const Wednesday = () => {
         </div>
         <div className=' flex flex-col justify-start items-center p-10 border-4 border-textgreen/50 text-white rounded-xl'>
           <h1 className='text-4xl lg:text-5xl pb-5 font-extrabold text-textgreen'>Lunch</h1>
-          <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center px-10'>{data[2].L.map((menuitem, key) => (
+          <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center'>{data[2].L.map((menuitem, key) => (
             <h1 key={key}>{menuitem}</h1>
           ))}</div>
         </div>
         <div className=' flex flex-col justify-start items-center p-10 border-4 border-textgreen/50 text-white rounded-xl'>
           <h1 className='text-4xl md:text-5xl pb-5 font-extrabold text-textgreen'>Dinner</h1>
-          <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center px-10'>{data[2].D.map((menuitem, key) => (
+          <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center'>{data[2].D.map((menuitem, key) => (
             <h1 key={key}>{menuitem}</h1>
           ))}</div>
         </div>
