@@ -4,6 +4,7 @@ import { IBM_Plex_Sans } from 'next/font/google'
 import background from '@/public/assets/Pattern.svg'
 import data from '@/data/menu'
 import SSMSLogo from '@/components/SSMSLogo'
+import BottomBar from '@/components/BottomBar'
 
 const pacifico = Lilita_One({weight:['400'], subsets:['latin']})
 
@@ -29,7 +30,7 @@ export default function Home() {
       <div className='absolute right-5 top-5 lg:top-10'>
         <SSMSLogo />
       </div>
-      <section className='absolute w-screen min-h-screen px-10 lg:px-20 xl:px-40 flex flex-col items-center justify-center pt-10 lg:pt-0'>
+      <section className='absolute w-screen min-h-screen px-10 lg:px-20 xl:px-40 flex flex-col items-center justify-center pt-10 lg:pt-0 pb-28 lg:pb-0'>
       <h1 className={pacifico.className + " text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10"}>Today's Mess Menu</h1>
       <div className='pb-10'>
         <h1 className='text-3xl font-medium text-gray-400 pt-2'>{date}</h1>
@@ -59,6 +60,7 @@ export default function Home() {
           ))}</div>
         </div>
       </div>
+      <BottomBar />
       </section>
     </main>
     // <main className={mont.className + " flex flex-col justify-start items-center min-h-screen p-24 gap-20 bg-bggray text-white"}>

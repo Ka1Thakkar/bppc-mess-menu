@@ -2,6 +2,7 @@ import Nav from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import BottomBar from '@/components/BottomBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
