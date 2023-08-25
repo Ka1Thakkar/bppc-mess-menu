@@ -27,7 +27,7 @@ const gc_members = [
     {
         name : "Aarya Garg",
         position : "MR Mess Rep",
-        contact : "",
+        contact : "9752665028",
     },
     {
         name : "Tarun Kaswan",
@@ -37,27 +37,22 @@ const gc_members = [
     {
         name : "Aayush Paurana",
         position : "KG Mess Rep",
-        contact : "",
+        contact : "9930486791",
     },
     {
-        name : "Rishabh Malik",
+        name : "Advik Singh",
         position : "Member, AMC",
-        contact : "9820473423",
+        contact : "9717987272",
     },
     {
-        name : "Rahulraj Jhawar",
+        name : "Liyasha Agarwal",
         position : "Member, AMC",
-        contact : "7506251499",
+        contact : "9993649250",
     },
     {
-        name : "Puru Gupta",
+        name : "Varad Maniyar",
         position : "Member, AMC",
-        contact : "8491919650",
-    },
-    {
-        name : "Divyanshi Jena",
-        position : "Member, AMC",
-        contact : "8104188227",
+        contact : "9673501333",
     },
 ]
 
