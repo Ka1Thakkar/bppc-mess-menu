@@ -22,6 +22,15 @@ export default function Home() {
   const selected_day = (new Date().getDay() + 6) % 7
   const date = new Date().toUTCString().slice(5, 16);
 
+  // let d = Date(Date.now());
+ 
+  // // Converting the number of millisecond
+  // // in date string
+  // const a = d.toString()
+ 
+  // // Printing the current date
+  // console.log("The current date is: " + a)
+
   return (
     <main className=' bg-black min-h-screen relative overflow-x-hidden'>
       <Image src={background} style={{objectFit: 'cover'}} quality={100} alt='background' className='absolute w-screen min-h-screen md:h-screen bg-bggray' />
