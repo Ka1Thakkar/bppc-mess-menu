@@ -5,6 +5,7 @@ import background from '@/public/assets/Pattern.svg'
 import data from '@/data/menu'
 import SSMSLogo from '@/components/SSMSLogo'
 import BottomBar from '@/components/BottomBar'
+import { GetServerSideProps } from 'next'
 
 const pacifico = Lilita_One({weight:['400'], subsets:['latin']})
 
@@ -19,8 +20,9 @@ export default function Home() {
     "MILK",
   ]
 
-  const selected_day = (new Date().getDay() + 6) % 7
-  const date = new Date().toUTCString().slice(5, 16);
+  let selected_day = 0
+  selected_day = (new Date().getDay() + 6) % 7
+  let date = new Date().toUTCString().slice(5, 16);
 
   // let d = Date(Date.now());
  
@@ -72,36 +74,5 @@ export default function Home() {
       <BottomBar />
       </section>
     </main>
-    // <main className={mont.className + " flex flex-col justify-start items-center min-h-screen p-24 gap-20 bg-bggray text-white"}>
-    //   <div className='text-center'>
-    //     <h1 className={tulpen.className + ' text-7xl font-black'}>{data[selected_day].Day}</h1>
-    //     <h1 className='text-4xl font-medium text-gray-400'>{date}</h1>
-    //   </div>
-    //   <div className=' grid grid-cols-3 w-full gap-10 text-black'>
-    //     <div className=' flex flex-col justify-start items-center p-10 bg-gray-300 rounded-xl'>
-    //     <h1 className='text-6xl pb-5 font-black'>Breakfast</h1>
-    //       <div>
-    //         {breakfast_consts.map((breakfast, i)=>(
-    //           <h1 key={i} className='text-center text-xl font-medium'>{breakfast}</h1>
-    //         ))}
-    //       </div>
-    //       <div className='flex flex-col gap-2 text-xl font-medium text-center'>{data[selected_day].B.map((menuitem, key) => (
-    //         <h1 key={key}>{menuitem}</h1>
-    //       ))}</div>
-    //     </div>
-    //     <div className=' flex flex-col justify-start items-center p-10 bg-gray-300 rounded-xl'>
-    //       <h1 className='text-6xl pb-5 font-black'>Lunch</h1>
-    //       <div className='flex flex-col gap-2 text-xl font-medium text-center px-10'>{data[selected_day].L.map((menuitem, key) => (
-    //         <h1 key={key}>{menuitem}</h1>
-    //       ))}</div>
-    //     </div>
-    //     <div className=' flex flex-col justify-start items-center p-10 bg-gray-300 rounded-xl'>
-    //       <h1 className='text-6xl pb-5 font-black'>Dinner</h1>
-    //       <div className='flex flex-col gap-2 text-xl font-medium text-center px-10'>{data[selected_day].D.map((menuitem, key) => (
-    //         <h1 key={key}>{menuitem}</h1>
-    //       ))}</div>
-    //     </div>
-    //   </div>
-    // </main>
   )
 }
