@@ -11,6 +11,10 @@ const pacifico = Lilita_One({weight:['400'], subsets:['latin']})
 
 const mont = Montserrat({weight:['400','500','700','600','900','100','200','300','800'], subsets:['latin']})
 
+let selected_day = 0
+selected_day = (new Date().getDay() + 6) % 7
+let date = new Date().toUTCString().slice(5, 16);
+
 export default function Home() {
   const breakfast_consts = [
     "CHOICE OF EGG",
@@ -20,9 +24,9 @@ export default function Home() {
     "MILK",
   ]
 
-  let selected_day = 0
-  selected_day = (new Date().getDay() + 6) % 7
-  let date = new Date().toUTCString().slice(5, 16);
+  // let selected_day = 0
+  // selected_day = (new Date().getDay() + 6) % 7
+  // let date = new Date().toUTCString().slice(5, 16);
 
   // let d = Date(Date.now());
  
