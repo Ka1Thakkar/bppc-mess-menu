@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import { Lilita_One, Montserrat, Pacifico } from 'next/font/google'
 import { IBM_Plex_Sans } from 'next/font/google'
@@ -6,6 +7,7 @@ import data from '@/data/menu'
 import SSMSLogo from '@/components/SSMSLogo'
 import BottomBar from '@/components/BottomBar'
 import { GetServerSideProps } from 'next'
+import { useEffect, useState } from 'react'
 
 const pacifico = Lilita_One({weight:['400'], subsets:['latin']})
 
@@ -15,6 +17,7 @@ let selected_day = 0
 selected_day = (new Date().getDay() + 6) % 7
 let date = new Date().toUTCString().slice(5, 16);
 
+
 export default function Home() {
   const breakfast_consts = [
     "CHOICE OF EGG",
@@ -23,6 +26,40 @@ export default function Home() {
     "TEA + COFFEE",
     "MILK",
   ]
+
+  var date =  new Date().toUTCString().slice(5, 16)
+  
+  // var date = ""
+
+  // function setDate() {
+  //   date =  new Date().toUTCString().slice(5, 16)
+  //   return date
+  // }
+
+  // var selected_day = 0
+
+  // function setMenuDay() {
+  //   selected_day = (new Date().getDay() + 6) % 7
+  //   return selected_day
+  // }
+
+  // window.onbeforeunload = setDate;
+  // window.onbeforeunload = setMenuDay;
+
+  // addEventListener("load", (event) => {
+  //   var date = new Date().toUTCString().slice(5, 16)
+  //   var selected_day = (new Date().getDay() + 6) % 7
+  // })
+
+  // var date = addEventListener("load", (event) => {
+  //   return new Date().toUTCString().slice(5, 16)
+  // })
+
+  // var selected_day = addEventListener("load", (event) => {
+  //   return (new Date().getDay() + 6) % 7
+  // })
+
+  // var date = new Date().toUTCString().slice(5, 16);
 
   // let selected_day = 0
   // selected_day = (new Date().getDay() + 6) % 7
@@ -48,7 +85,7 @@ export default function Home() {
       <section className='absolute w-screen min-h-screen px-10 lg:px-20 xl:px-40 flex flex-col items-center justify-center pt-10 lg:pt-0 pb-28 lg:pb-0'>
       <h1 className={pacifico.className + " text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10"}>Today's Mess Menu</h1>
       <div className='pb-10'>
-        <h1 className='text-3xl font-medium text-gray-400 pt-2'>{date}</h1>
+        <h1 className='text-3xl font-medium text-gray-400 pt-2'>{data[selected_day].Date}</h1>
       </div>
       <div className={mont.className + ' flex flex-col lg:grid lg:grid-cols-3 w-full gap-10 text-black pb-20'}>
         <div className=' flex flex-col justify-start items-center p-10 border-4 rounded-xl text-white border-textgreen/50'>
