@@ -42,7 +42,7 @@ const data = [{
 },
 {
     Day : "Sunday",
-    Date : "03 SEP 2023",
+    Date : "10 SEP 2023",
     B: ["MASALA DOSA","SAMBAR","COCONUT CHUTNEY", "BANANA",],
     L: ["ONION SALAD", "PANEER LAHORI", "DHABA CHICKEN", "", "NAAN", "BIRYANI RICE", "ONION MINT RAITA", ""],
     D: ["GREEN SALAD", "BHINDI MASALA", "MIX DAL", "CHAPATI", "PLAIN RICE", "RASAM", ""]
