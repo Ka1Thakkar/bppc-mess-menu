@@ -35,10 +35,10 @@ const data = [{
 },
 {
     Day : "Saturday",
-    Date : "16 SEP 2023",
-    B: ["NOT YET UPLOADED","","", "",],
-    L: ["NOT YET UPLOADED","", "", "", "", "", "", ""],
-    D: ["NOT YET UPLOADED", "", "", "", "", "",""]
+    Date : "09 SEP 2023",
+    B: ["VADA PAV","GREEN CHUTNEY","SWEET DALIYA", "PEAR",],
+    L: ["GREEN CHUTNEY","FRENCH FRIES", "KALA CHANA MASALA", "CURD/ BUTTER", "MIX VEG PARATHA", "PLAIN RICE", "SAMBAR", "ROOH AFZA"],
+    D: ["GREEN SALAD", "GATTA CURRY", "CHANNA DAL TADKA", "CHAPATI", "PLAIN RICE", "RASAM","RAJASTANI PETHA"]
 },
 {
     Day : "Sunday",
