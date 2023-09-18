@@ -40,20 +40,25 @@ const gc_members = [
         contact : "9930486791",
     },
     {
-        name : "Advik Singh",
+        name : "Rishabh Malik",
         position : "AMC",
-        contact : "9717987272",
+        contact : "9820473423",
     },
     {
-        name : "Liyasha Agarwal",
+        name : "Divyanshi Jena",
         position : "AMC",
-        contact : "9993649250",
+        contact : "8104188227",
     },
     {
-        name : "Varad Maniyar",
+        name : "Puru Gupta",
         position : "AMC",
-        contact : "9673501333",
+        contact : "8491919650",
     },
+    {
+        name : "Rahulraj Jhawar",
+        position : "AMC",
+        contact : "7506251499"
+    }
 ]
 
 export default gc_members;

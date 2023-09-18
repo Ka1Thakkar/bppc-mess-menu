@@ -15,7 +15,7 @@ const GCMembers = () => {
             <Image src={background} alt='background image' quality={100} style={{objectFit:'cover', maskRepeat: 'true'}} className='absolute h-screen w-screen bg-bggray' />
             <div className='absolute w-screen h-screen bg-gradient-to-b from-transparent to-black'></div>
             <Navbar2 />
-            <section className='flex flex-col justify-center absolute w-screen min-h-screen pt-10 lg:pt-0 pb-44 xl:pb-0'>
+            <section className='flex flex-col justify-center absolute w-screen min-h-screen pt-10 lg:pt-0 pb-56 xl:pb-40'>
                 <h1 className={lilita.className + ' text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10 lg:pt-0 pb-10'}>GC Members</h1>
                 <div className='md:grid md:grid-cols-2 lg:grid-cols-3 gap-x-5 px-10 lg:px-32 xl:px-40 gap-y-5 flex flex-col gap-5'>
                     {gc_members.map((member,key)=>(
