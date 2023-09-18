@@ -39,7 +39,7 @@ export default function Home() {
       <div className='pb-10'>
         <h1 className='text-3xl font-medium text-gray-400 pt-2'></h1>
       </div>
-      <div className={mont.className + ' flex flex-col lg:grid lg:grid-cols-3 w-full gap-10 text-black pb-20'}>
+      <div className={mont.className + ' flex flex-col lg:grid lg:grid-cols-3 w-full gap-10 text-black pb-20 xl:pb-40'}>
         <div className=' flex flex-col justify-start items-center p-10 border-4 rounded-xl text-white border-textgreen/50'>
         <h1 className='lg:text-5xl text-4xl pb-5 font-extrabold text-textgreen'>Breakfast</h1>
           {/* <div className=''>
