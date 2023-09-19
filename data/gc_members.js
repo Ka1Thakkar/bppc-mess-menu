@@ -15,29 +15,44 @@ const gc_members = [
         contact : "7972385966",
     },
     {
-        name : "Abhinav Lamba",
+        name : "Udbhav Awasthi",
         position : "RB Mess Rep",
-        contact : "7078879443",
+        contact : "",
     },
     {
-        name : "Raj Shekhar",
+        name : "Hardik Gupta",
         position : "CVR Mess Rep",
-        contact : "9910043969",
+        contact : "",
     },
     {
-        name : "Aarya Garg",
+        name : "Himangi Rajvanshi",
         position : "MR Mess Rep",
-        contact : "9752665028",
+        contact : "",
+    },
+    {
+        name : "Prateek Tyagi",
+        position : "SR Mess Rep",
+        contact : "",
+    },
+    {
+        name : "Parver Chhabra",
+        position : "KG Mess Rep",
+        contact : "",
     },
     {
         name : "Tarun Kaswan",
-        position : "SR Mess Rep",
-        contact : "8306650797",
+        position : "SV Mess Rep",
+        contact : "8306650797"
     },
     {
-        name : "Aayush Paurana",
-        position : "KG Mess Rep",
-        contact : "9930486791",
+        name : "Aman CHauhan",
+        position : "Malviya Mess Rep",
+        contact : ""
+    },
+    {
+        name : "Akshat Agrawal",
+        position : "AK-RP-VK Mess Rep",
+        contact : ""
     },
     {
         name : "Rishabh Malik",
