@@ -3,6 +3,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import BottomBar from '@/components/BottomBar'
+import logo from '@/public/assets/download.png'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className=' scroll-smooth transition-all ease-in-out'>
+    <html lang="en" className=' scroll-smooth transition-all ease-in-out relative'>
       <Nav />
       <body className={inter.className}>{children}</body>
     </html>

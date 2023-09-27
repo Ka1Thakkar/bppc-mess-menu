@@ -29,14 +29,14 @@ export default function Home() {
 
   return (
     <main className=' bg-black min-h-screen relative overflow-x-hidden'>
+      <div className='absolute top-5 lg:top-10 left-5 lg:left-20 z-50'>
+        <Image src={logo} alt="SSMS Logo" className='h-[40px] w-[40px] lg:h-[50px] lg:w-[50px] rounded-full' />
+      </div>
       <Image src={background} style={{objectFit: 'cover'}} quality={100} alt='background' className='absolute w-screen min-h-screen md:h-screen bg-bggray' />
       <div className=' absolute min-h-screen w-screen bg-gradient-to-b from-transparent via-black/90 to-black'></div>
       <div className='bg-black bottom-0 absolute h-screen'></div>
-      <div className='absolute right-5 top-5 lg:top-10'>
+      <div className='absolute right-5 top-5 lg:top-10 flex gap-2 pl-5 lg:pl-40'>
         <SSMSLogo />
-      </div>
-      <div className='absolute left-3 top-4 lg:top-10 lg:left-20'>
-      <Image src={logo} alt="SSMS logo" className="rounded-full h-[40px] w-[40px] lg:h-[50px] lg:w-[50px]" />
       </div>
       <section className='absolute w-screen min-h-screen px-10 lg:px-20 xl:px-40 flex flex-col items-center justify-center pt-10 lg:pt-0 pb-28 lg:pb-0'>
       <h1 className={pacifico.className + " text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10"}>Mess Timings</h1>

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import background from '@/public/assets/Pattern.png'
 import Navbar2 from '@/components/Navbar2';
 import BottomBar from '@/components/BottomBar';
+import logo from "@/public/assets/download.png"
 
 const mont = Montserrat({weight:['400','500','700','600','900','100','200','300','800'], subsets:['latin']})
 
@@ -21,6 +22,9 @@ const Sunday = () => {
         <Image src={background} style={{objectFit: 'cover'}} quality={100} alt='background' className='absolute w-screen min-h-screen md:h-screen bg-bggray' />
         <div className=' absolute min-h-screen w-screen bg-gradient-to-b from-transparent via-black/90 to-black'></div>
         <div className='bg-black bottom-0 absolute h-screen'></div>
+        <div className='absolute top-5 lg:top-10 left-5 lg:left-20 z-50'>
+          <Image src={logo} alt="SSMS Logo" className='h-[40px] w-[40px] lg:h-[50px] lg:w-[50px] rounded-full' />
+        </div>
         <Navbar2 />
     <section className='absolute w-screen min-h-screen px-10 lg:px-20 xl:px-40 flex flex-col items-center justify-center pt-10 lg:pt-0 pb-28 lg:pb-0'>
       <h1 className={pacifico.className + " text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10"}>{data[6].Day}</h1>

@@ -6,6 +6,7 @@ import { Lilita_One } from 'next/font/google';
 import Navbar2 from '@/components/Navbar2';
 import BottomBar from '@/components/BottomBar';
 import Link from 'next/link';
+import logo from "@/public/assets/download.png"
 
 const lilita = Lilita_One({weight:['400'], subsets:['latin']})
 
@@ -14,6 +15,9 @@ const GCMembers = () => {
         <main className=" min-h-screen bg-black relative overflow-x-hidden">
             <Image src={background} alt='background image' quality={100} style={{objectFit:'cover', maskRepeat: 'true'}} className='absolute h-screen w-screen bg-bggray' />
             <div className='absolute w-screen h-screen bg-gradient-to-b from-transparent to-black'></div>
+            <div className='absolute top-5 lg:top-10 left-5 lg:left-20 z-50'>
+                <Image src={logo} alt="SSMS Logo" className='h-[40px] w-[40px] lg:h-[50px] lg:w-[50px] rounded-full' />
+            </div>
             <Navbar2 />
             <section className='flex flex-col justify-center absolute w-screen min-h-screen pt-10 lg:pt-0 pb-56 xl:pb-40'>
                 <h1 className={lilita.className + ' text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10 lg:pt-0 pb-10'}>GC Members</h1>

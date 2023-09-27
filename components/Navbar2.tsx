@@ -3,7 +3,7 @@ import SSMSLogo from "./SSMSLogo";
 
 const Navbar2 = () => {
     return (
-        <div className='absolute z-10 right-5 top-5 lg:top-10 px-5 flex gap-5 items-center w-screen justify-end'>
+        <div className='absolute z-10 right-2 top-5 lg:top-10 flex gap-2 items-center w-screen justify-end'>
             <BackButton />
             <SSMSLogo />
         </div>
