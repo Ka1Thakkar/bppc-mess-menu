@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import logo from '@/public/assets/download.png'
+import logo from '@/public/assets/icons8-hamburger-menu-50 (1).png'
 import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem, Button, Divider} from "@nextui-org/react";
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ const SSMSLogo = () => {
                 <Button 
                 variant="bordered" 
                 >
-                <Image src={logo} alt="SSMS logo" className="rounded-full h-[50px] w-[50px] lg:h-[60px] lg:w-[60px]" />
+                <Image src={logo} alt="SSMS logo" className="h-[20px] w-[20px] lg:h-[25px] lg:w-[25px]" />
                 </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions" className="bg-darkgreen text-black rounded-lg text-lg px-5 py-5">

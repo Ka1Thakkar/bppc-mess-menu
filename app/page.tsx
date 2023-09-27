@@ -5,6 +5,7 @@ import background from '@/public/assets/Pattern.svg'
 import data from '@/data/timings'
 import SSMSLogo from '@/components/SSMSLogo'
 import BottomBar from '@/components/BottomBar'
+import logo from '@/public/assets/download.png'
 
 const pacifico = Lilita_One({weight:['400'], subsets:['latin']})
 
@@ -33,6 +34,9 @@ export default function Home() {
       <div className='bg-black bottom-0 absolute h-screen'></div>
       <div className='absolute right-5 top-5 lg:top-10'>
         <SSMSLogo />
+      </div>
+      <div className='absolute left-3 top-4 lg:top-10 lg:left-20'>
+      <Image src={logo} alt="SSMS logo" className="rounded-full h-[40px] w-[40px] lg:h-[50px] lg:w-[50px]" />
       </div>
       <section className='absolute w-screen min-h-screen px-10 lg:px-20 xl:px-40 flex flex-col items-center justify-center pt-10 lg:pt-0 pb-28 lg:pb-0'>
       <h1 className={pacifico.className + " text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10"}>Mess Timings</h1>
