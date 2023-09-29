@@ -45,7 +45,7 @@ const gc_members = [
         contact : "8306650797"
     },
     {
-        name : "Aman CHauhan",
+        name : "Aman Chauhan",
         position : "Malviya Mess Rep",
         contact : "9540822901"
     },
