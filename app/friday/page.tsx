@@ -36,12 +36,12 @@ const Friday = () => {
           <div className={mont.className + ' flex flex-col lg:grid lg:grid-cols-3 w-full gap-10 text-black pb-20 xl:pb-40'}>
             <div className=' flex flex-col justify-start items-center p-10 border-4 rounded-xl text-white border-textgreen/50'>
             <h1 className='lg:text-5xl text-4xl pb-5 font-extrabold text-textgreen'>Breakfast</h1>
-              <div className=''>
+              <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center'>
                 {breakfast_consts.map((breakfast, i)=>(
-                  <h1 key={i} className='text-center text-base lg:text-xl'>{breakfast}</h1>
+                  <h1 key={i} className='text-center text-base md:text-xl font-medium'>{breakfast}</h1>
                 ))}
               </div>
-              <div className='flex flex-col gap-2 text-base lg:text-xl font-medium text-center'>{data[4].B.map((menuitem, key) => (
+              <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center'>{data[4].B.map((menuitem, key) => (
                 <h1 key={key}>{menuitem}</h1>
               ))}</div>
             </div>
