@@ -11,7 +11,7 @@ const mont = Montserrat({weight:['400','500','700','600','900','100','200','300'
 
 const Tuesday = () => {
     const breakfast_consts = [
-        "CHOICE OF EGG",
+        // "CHOICE OF EGG",
         "CORNFLAKES",
         "BREAD + JAM",
         "TEA + COFFEE",
