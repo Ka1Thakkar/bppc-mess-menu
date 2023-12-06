@@ -6,6 +6,8 @@ import data from '@/data/timings'
 import SSMSLogo from '@/components/SSMSLogo'
 import BottomBar from '@/components/BottomBar'
 import logo from '@/public/assets/download.png'
+import { useRouter } from 'next/navigation'
+import {useEffect, useState} from 'react'
 
 const pacifico = Lilita_One({weight:['400'], subsets:['latin']})
 
@@ -14,9 +16,17 @@ const mont = Montserrat({weight:['400','500','700','600','900','100','200','300'
 let selected_day = 0
 selected_day = (new Date().getDay() + 6) % 7
 let date = new Date().toUTCString().slice(5, 16);
-
-
+let day = new Date().getDay();
+const todayDay= day==1?'monday':day==2?'tuesday':day==3?'wednesday':day==4?'thursday':day==5?'friday':day==6?'saturday':'sunday';
+let runCount =0
 export default function Home() {
+  const router = useRouter()
+  useEffect(()=>{
+    if(runCount==0){
+    router.push(`/${todayDay}`);
+    runCount =1;
+    }
+  },[])
   const breakfast_consts = [
     "CHOICE OF EGG",
     "CORNFLAKES",
