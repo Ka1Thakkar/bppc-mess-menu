@@ -21,8 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className=' scroll-smooth transition-all ease-in-out relative'>
-      <Nav />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Nav />
+        {children}
+      </body>
       <Analytics />
     </html>
   )
