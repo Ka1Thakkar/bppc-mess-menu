@@ -11,13 +11,13 @@ import DayMenu from '@/components/day-menu';
 const mont = Montserrat({weight:['400','500','700','600','900','100','200','300','800'], subsets:['latin']})
 
 const Thursday = () => {
-    const breakfast_consts = [
-        "CHOICE OF EGG",
-        "CORNFLAKES",
-        "BREAD + JAM",
-        "TEA + COFFEE",
-        "MILK",
-    ]
+    // const breakfast_consts = [
+    //     "CHOICE OF EGG",
+    //     "CORNFLAKES",
+    //     "BREAD + JAM",
+    //     "TEA + COFFEE",
+    //     "MILK",
+    // ]
     return (
       <DayMenu index={3} />
     // <main className='bg-black min-h-screen relative overflow-x-hidden'>
