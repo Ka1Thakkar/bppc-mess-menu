@@ -38,7 +38,7 @@ const DayMenu = ({index}) => {
         <h1 className='lg:text-5xl text-4xl pb-5 font-extrabold text-textgreen'>Breakfast</h1>
           <div className=''>
             {breakfast_consts.map((breakfast, i)=>(
-              <h1 key={i} className='text-center text-base lg:text-xl capitalize'>{breakfast}</h1>
+              <h1 key={i} className='flex flex-col gap-2 text-base lg:text-xl font-medium text-center capitalize'>{breakfast}</h1>
             ))}
           </div>
           <div className='flex flex-col gap-2 text-base lg:text-xl font-medium text-center capitalize'>{data[index].B.map((menuitem, key) => (
