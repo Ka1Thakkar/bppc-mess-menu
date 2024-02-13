@@ -29,8 +29,8 @@ const data = [{
     // B: ["BREAD PAKORA","TOMATO KETCHUP","SWEET DALIYA", "BANANA",],
     // B: ["METHI PARATHA","CURD + PICKLE","", "HONEYDEW",],
     // B: ["MUTTER","KULCHA","CUT LEMON ONION", "PAPAYA",],
-    // L: ["ONION SALAD", "PANEER KADHAI", "", "DAL MAKHANI", "CHAPATI", "PULAO RICE", "PINEAPPLE RAITA", "CHOCO BARFI"],
-    L: ['GRUB', 'MENU WILL BE ANNOUNCE SOON'],
+    L: ["VEG Croquettes", "PANEER TIKKA MASALA", "butter dal tadka", "veg pulao", "naan/ CHAPATI", "onion mint raita", "boondi ladoo", ""],
+    // L: ['GRUB', 'MENU WILL BE ANNOUNCE SOON'],
     D: ["CORN SALAD", "VEG 65", "DAL TADKA", "CHAPATI", "PLAIN RICE", "RASAM",""],
     // D: ["GREEN SALAD", "VADA", "SAMBHAR", "MASALA DOSA", "LEMON RICE", "COCONUT CHUTNEY", ""],
     // D: ["LEMON + ONION", "BHAJI", "RED MASOOR DAL", "PAV/ CHAPATI", "PLAIN RICE", "RASAM", ""]
