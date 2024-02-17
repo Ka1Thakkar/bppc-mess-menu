@@ -1,18 +1,18 @@
 const gc_members = [
     {
-        name : "Pulkit Gupta",
+        name : "Tarun Kaswan",
         position : "President, SSMS",
-        contact : "8968717838",
+        contact : "8306650797"
     },
     {
-        name : "Tanish Nevatiya",
+        name : "Puru Gupta",
         position : "Secretary, SSMS",
-        contact : "7307620003",
+        contact : "8491919650",
     },
     {
-        name : "Karan Bagul",
+        name : "Rishabh Malik",
         position : "Treasurer, SSMS",
-        contact : "7972385966",
+        contact : "9820473423",
     },
     {
         name : "Udbhav Awasthi",
@@ -39,11 +39,11 @@ const gc_members = [
         position : "KG Mess Rep",
         contact : "9066666553",
     },
-    {
-        name : "Tarun Kaswan",
-        position : "SV Mess Rep",
-        contact : "8306650797"
-    },
+    // {
+    //     name : "Tarun Kaswan",
+    //     position : "SV Mess Rep",
+    //     contact : "8306650797"
+    // },
     {
         name : "Aman Chauhan",
         position : "Malviya Mess Rep",
@@ -54,21 +54,21 @@ const gc_members = [
         position : "AK-RP-VK Mess Rep",
         contact : "7485053355"
     },
-    {
-        name : "Rishabh Malik",
-        position : "AMC",
-        contact : "9820473423",
-    },
+    // {
+    //     name : "Rishabh Malik",
+    //     position : "AMC",
+    //     contact : "9820473423",
+    // },
     {
         name : "Divyanshi Jena",
         position : "AMC",
         contact : "8104188227",
     },
-    {
-        name : "Puru Gupta",
-        position : "AMC",
-        contact : "8491919650",
-    },
+    // {
+    //     name : "Puru Gupta",
+    //     position : "AMC",
+    //     contact : "8491919650",
+    // },
     {
         name : "Rahulraj Jhawar",
         position : "AMC",
