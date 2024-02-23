@@ -61,7 +61,8 @@ const data = [{
     // B: ["MASALA SANDWICH","TOMATO KETCHUP","SWEET DALIYA", "PAPAYA",],
     // B: ["VADA PAV","GREEN CHUTNEY","SWEET DALIYA", "HONEYDEW",],
     // B: ["BREAD PAKORA","TOMATO KETCHUP","SWEET DALIYA", "APPLE",],
-    L: ["MONTHLY GRUB: WILL BE UPDATED SOON"],
+    // L: ["MONTHLY GRUB: WILL BE UPDATED SOON"],
+    L: ["veg bullets", "PANEER do pyaza", "dal makhani", "zafrani pulao", "ajwaini paratha", "boondi raita", "rasgulla", ""],
     // L: ["BHEL Poori", "BAINGAN BHARTHA", "veg kofta curry", "DAL lahsuni", "CHAPATI", "PLAIN RICE", "sambar", "SHIKANJI"],
     D: ["MIX SALAD", "VEG MANCHURIAN", "BLACK MASOOR DAL", "EGG FRIED RICE/ VEG FRIED RICE", "CHAPATI", "veg noodles",""]
     // D: ["CUT ONION + LEMON", "PAO BHAJI", "DAL TAKDA", "CHAPATI", "PLAIN RICE", "rasam", "seviya kheer"],
