@@ -1,24 +1,22 @@
 const data = [{
     Day : "Monday",
-    Date: "26 FEB 2023",
+    Date: "19 FEB 2023",
     // B: ["POHA","SEV","CUT ONION LEMON", "KINU",],
-    // B: ["PURI","ALOO BHAJI","ONION + LEMON", "guava",],
-    B: ["BREAD roll","tomato ketchup","SWEET DALIYA", "grapes",],
+    B: ["PURI","ALOO BHAJI","ONION + LEMON", "guava",],
     // B: ["SAUTEE IDLI/ IDLI","SAMBHAR","COCONUT CHUTNEY", "HONEY DEW",],
-    L: ["bhel puri", "tinda masala", "rajma masala", "DAL TADKA", "CHAPATI", "PLAIN RICE", "SAMBAR", "rasna"],
+    L: ["GREEN SALAD", "cabbage mutter", "rajma masala", "DAL TADKA", "CHAPATI", "PLAIN RICE", "SAMBAR", "sweet lassi"],
     // D: ["GREEN SALAD", "VADA", "SAMBHAR", "MASALA DOSA", "TAMRIND RICE", "COCONUT CHUTNEY", "VEG MANCHOW SOUP"],
     // D: ["MIRCH KE TAPOREY/ LAHSUN CHUTNEY", "ALOO RASSA", "DAL FRY", "BATI/ CHAPATI", "PLAIN RICE", "RASAM", "CHOORMA"]
-    // D: ["corn SALAD", "punjabi dum aloo", "DAL panchratan", "CHAPATI", "PLAIN RICE","RASAM", ""]
-    D: ["LEMON + ONION", "BHAJI", "RED MASOOR DAL", "PAV/ CHAPATI", "PLAIN RICE", "RASAM", ""]
+    D: ["corn SALAD", "punjabi dum aloo", "DAL panchratan", "CHAPATI", "PLAIN RICE","RASAM", ""]
 },
 {
     Day : "Tuesday",
-    Date : "27 FEB 2023",
+    Date : "20 FEB 2023",
     // B: ["ALOO PARATHA","CURD","PICKLE", "KINO",],
-    B: ["aloo pyaaz PARATHA","CURD","PICKLE", "kinu",],
+    B: ["aloo PARATHA","CURD","PICKLE", "grapes",],
     // B: ["MASALA SANDWICH","TOMATO KETCHUP","SWEET DALIYA", "BANANA",],
-    L: ["papdi chaat", "aloo gobhi adraki", "gutta curry", "DAL palak", "CHAPATI", "PLAIN RICE", "sambar", "masala chhach"],
-    D: ["LEMON + ONION", "KHATTA MEETHA PUMPKIN", "CHHOLE MASALA", "AJWAINI PURI / CHAPATI", "plain RICE","jeera raita", "sweet boondi"]
+    L: ["green SALAD", "kathal MASALA", "VEG KORMA", "moong DAL tadka", "CHAPATI", "PLAIN RICE", "sambar", "masala chhach"],
+    D: ["LEMON + ONION", "KHATTA MEETHA PUMPKIN", "CHHOLE MASALA", "AJWAINI PURI / CHAPATI", "plain RICE","jeera raita", "gulab jamun"]
 },
 {
     Day : "Wednesday",
@@ -33,6 +31,7 @@ const data = [{
     // L: ['GRUB', 'MENU WILL BE ANNOUNCE SOON'],
     D: ["green SALAD", "lobiya masala", "DAL fry", "CHAPATI", "PLAIN RICE", "RASAM","rice phirni"],
     // D: ["GREEN SALAD", "VADA", "SAMBHAR", "MASALA DOSA", "LEMON RICE", "COCONUT CHUTNEY", ""],
+    // D: ["LEMON + ONION", "BHAJI", "RED MASOOR DAL", "PAV/ CHAPATI", "PLAIN RICE", "RASAM", ""]
 },
 {
     Day : "Thursday",
