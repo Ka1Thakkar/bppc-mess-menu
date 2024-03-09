@@ -35,7 +35,6 @@ export default function Home() {
     "MILK",
   ]
 
-  var date =  new Date().toUTCString().slice(5, 16)
 
   return (
     <main className=' bg-black min-h-screen relative overflow-x-hidden'>
@@ -49,7 +48,7 @@ export default function Home() {
         <SSMSLogo />
       </div>
       <section className='absolute w-screen min-h-screen px-10 lg:px-20 xl:px-40 flex flex-col items-center justify-center pt-10 lg:pt-0 pb-28 lg:pb-0'>
-      <h1 className={pacifico.className + " text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10"}>Mess Timings</h1>
+      <h1 className={pacifico.className + " text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10 uppercase"}>Mess Timings</h1>
       <div className='pb-10'>
         <h1 className='text-3xl font-medium text-gray-400 pt-2'></h1>
       </div>
