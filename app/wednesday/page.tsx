@@ -137,7 +137,7 @@ setDayinMenu(false);
             }
           >
             <p className="lg:text-4xl md:text-3xl text-2xl text-textgreen text-center">
-              Menu will be shortly updated.
+              Menu will be updated shortly.
             </p>
           </div>
           <BottomBar />
