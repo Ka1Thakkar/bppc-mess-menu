@@ -2,7 +2,7 @@ const gc_members = [
     {
         name : "Tarun Kaswan",
         position : "President, SSMS",
-        contact : "8306650797"
+        contact : "8306650796"
     },
     {
         name : "Puru Gupta",
