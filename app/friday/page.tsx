@@ -50,7 +50,6 @@ const Monday = () => {
     if (!fetched) {
       fetchMenu(apiURL);
     }
-    setFetched(true);
     if (fetched) {
       updateTodayMenu(menu)
     }
