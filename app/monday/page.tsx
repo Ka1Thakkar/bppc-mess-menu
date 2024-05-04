@@ -49,7 +49,10 @@ const Monday = () => {
   };
 
   useEffect(() => {
-    fetchMenu(apiURL);
+    if (!fetched) {
+      fetchMenu(apiURL);
+    }
+    setFetched(true);
     if (fetched) {
       updateTodayMenu(menu)
     }
