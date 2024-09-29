@@ -3,7 +3,7 @@ import data from "@/data/menu";
 import { Lilita_One, Montserrat } from "next/font/google";
 import { useState, useEffect } from "react";
 const pacifico = Lilita_One({ weight: ["400"], subsets: ["latin"] });
-import Image from 'next/image';
+import Image from "next/image";
 import background from "@/public/assets/Pattern.png";
 import Navbar2 from "@/components/Navbar2";
 import BottomBar from "@/components/BottomBar";
@@ -38,7 +38,7 @@ const Monday = () => {
       }
     }
   };
-  const apiURL = process.env.NEXT_PUBLIC_API_URL
+  const apiURL = process.env.NEXT_PUBLIC_API_URL;
   const fetchMenu = async (apiURL: any) => {
     const res = await fetch(apiURL);
     const data = await res.json();
@@ -51,7 +51,7 @@ const Monday = () => {
       fetchMenu(apiURL);
     }
     if (fetched) {
-      updateTodayMenu(menu)
+      updateTodayMenu(menu);
     }
   }, [menu]);
 
@@ -64,7 +64,12 @@ const Monday = () => {
   return (
     <>
       {!fetched && (
-        <main className={pacifico.className + "bg-black min-h-screen relative overflow-x-hidden flex justify-center items-center text-white"}>
+        <main
+          className={
+            pacifico.className +
+            "bg-black min-h-screen relative overflow-x-hidden flex justify-center items-center text-white"
+          }
+        >
           <Image
             src={background}
             style={{ objectFit: "cover" }}
