@@ -24,7 +24,7 @@ const Monday = () => {
   const [dinner, setDinner] = useState([]);
   const [dayinMenu, setDayinMenu] = useState(true);
 
-  const updateTodayMenu = (menu : any) => {
+  const updateTodayMenu = (menu: any) => {
     for (let i = 0; i < menu.length; i++) {
       if (menu[i] == null) {
         setDayinMenu(false);
@@ -39,7 +39,7 @@ const Monday = () => {
     }
   };
   const apiURL = process.env.NEXT_PUBLIC_API_URL
-  const fetchMenu = async (apiURL : any) => {
+  const fetchMenu = async (apiURL: any) => {
     const res = await fetch(apiURL);
     const data = await res.json();
     setMenu(data);
@@ -64,84 +64,84 @@ const Monday = () => {
   return (
     <>
       {!fetched && (
-      <main className={pacifico.className+"bg-black min-h-screen relative overflow-x-hidden flex justify-center items-center text-white"}>
-      <Image
-        src={background}
-        style={{ objectFit: "cover" }}
-        quality={100}
-        alt="background"
-        className="absolute w-screen min-h-screen md:h-screen bg-bggray"
-      />
-      <div className=" absolute min-h-screen w-screen bg-gradient-to-b from-transparent via-black/90 to-black"></div>
-      <Navbar2 />
-      <div className="absolute top-5 lg:top-10 left-5 lg:left-20 z-50">
-        <Image
-          src={logo}
-          alt="SSMS Logo"
-          className="h-[40px] w-[40px] lg:h-[50px] lg:w-[50px] rounded-full"
-        />
-      </div>
-      <div className="z-50">
-      <ThreeDots
-        visible={true}
-        height="80"
-        width="80"
-        color="#2dd293"
-        radius="9"
-        ariaLabel="three-dots-loading"
-        wrapperStyle={{}}
-        wrapperClass=""
-      />
-      </div>
-      <BottomBar />
-    </main>
+        <main className={pacifico.className + "bg-black min-h-screen relative overflow-x-hidden flex justify-center items-center text-white"}>
+          <Image
+            src={background}
+            style={{ objectFit: "cover" }}
+            quality={100}
+            alt="background"
+            className="absolute w-screen min-h-screen md:h-screen bg-bggray"
+          />
+          <div className=" absolute min-h-screen w-screen bg-gradient-to-b from-transparent via-black/90 to-black"></div>
+          <Navbar2 />
+          <div className="absolute top-5 lg:top-10 left-5 lg:left-20 z-50">
+            <Image
+              src={logo}
+              alt="SSMS Logo"
+              className="h-[40px] w-[40px] lg:h-[50px] lg:w-[50px] rounded-full"
+            />
+          </div>
+          <div className="z-50">
+            <ThreeDots
+              visible={true}
+              height="80"
+              width="80"
+              color="#2dd293"
+              radius="9"
+              ariaLabel="three-dots-loading"
+              wrapperStyle={{}}
+              wrapperClass=""
+            />
+          </div>
+          <BottomBar />
+        </main>
       )}
       {fetched && !dayinMenu && (
         <main className="bg-black min-h-screen relative overflow-x-hidden">
-        <Image
-          src={background}
-          style={{ objectFit: "cover" }}
-          quality={100}
-          alt="background"
-          className="absolute w-screen min-h-screen md:h-screen bg-bggray"
-        />
-        <div className=" absolute min-h-screen w-screen bg-gradient-to-b from-transparent via-black/90 to-black"></div>
-        <Navbar2 />
-        <div className="absolute top-5 lg:top-10 left-5 lg:left-20 z-50">
           <Image
-            src={logo}
-            alt="SSMS Logo"
-            className="h-[40px] w-[40px] lg:h-[50px] lg:w-[50px] rounded-full"
+            src={background}
+            style={{ objectFit: "cover" }}
+            quality={100}
+            alt="background"
+            className="absolute w-screen min-h-screen md:h-screen bg-bggray"
           />
-        </div>
-        <div className="bg-black bottom-0 absolute h-screen"></div>
-        <section className="absolute w-screen min-h-screen px-10 lg:px-20 xl:px-40 flex flex-col items-center justify-center pt-10 lg:pt-0 pb-28 lg:pb-0">
-          <h1
-            className={
-              pacifico.className +
-              " text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10"
-            }
-          >
-            FRIDAY
-          </h1>
-          <div className="pb-10">
-            <h1 className="text-3xl font-medium text-gray-400 pt-2">
-              {(todayMenu as any).date}
+          <div className=" absolute min-h-screen w-screen bg-gradient-to-b from-transparent via-black/90 to-black"></div>
+          <Navbar2 />
+          <div className="absolute top-5 lg:top-10 left-5 lg:left-20 z-50">
+            <Image
+              src={logo}
+              alt="SSMS Logo"
+              className="h-[40px] w-[40px] lg:h-[50px] lg:w-[50px] rounded-full"
+            />
+          </div>
+          <div className="bg-black bottom-0 absolute h-screen"></div>
+          <section className="absolute w-screen min-h-screen px-10 lg:px-20 xl:px-40 flex flex-col items-center justify-center pt-10 lg:pt-0 pb-28 lg:pb-0">
+            <h1
+              className={
+                pacifico.className +
+                " text-6xl md:text-7xl text-center lg:text-8xl text-white font-black pt-10"
+              }
+            >
+              FRIDAY
             </h1>
-          </div>
-          <div
-            className={
-              pacifico.className +
-              " flex flex-col w-full gap-10 pb-20 xl:pb-40"
-            }
-          >
-            <p className="lg:text-4xl md:text-3xl text-2xl text-textgreen text-center">
-              Menu will be updated shortly.
-            </p>
-          </div>
-          <BottomBar />
-        </section>
-      </main>
+            <div className="pb-10">
+              <h1 className="text-3xl font-medium text-gray-400 pt-2">
+                {(todayMenu as any).date}
+              </h1>
+            </div>
+            <div
+              className={
+                pacifico.className +
+                " flex flex-col w-full gap-10 pb-20 xl:pb-40"
+              }
+            >
+              <p className="lg:text-4xl md:text-3xl text-2xl text-textgreen text-center">
+                Menu will be updated shortly.
+              </p>
+            </div>
+            <BottomBar />
+          </section>
+        </main>
       )}
       {fetched && dayinMenu && (
         <main className="bg-black min-h-screen relative overflow-x-hidden">
