@@ -48,7 +48,7 @@ const GCMembers = () => {
             " md:grid md:grid-cols-2 lg:grid-cols-3 gap-x-5 px-10 lg:px-32 xl:px-40 gap-y-5 flex flex-col gap-5"
           }
         >
-          {gc_members.map((member, key) => (
+          {gc_members.map((member) => (
             <div
               className=" bg-bggray p-5 rounded-xl flex justify-between w-full items-center"
               key={member.contact}
