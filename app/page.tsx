@@ -21,12 +21,22 @@ const todayDay= day==1?'monday':day==2?'tuesday':day==3?'wednesday':day==4?'thur
 let runCount =0
 export default function Home() {
   const router = useRouter()
+  const [selectedData, setSelectedData] = useState(0)
   useEffect(()=>{
     if(runCount==0){
     router.push(`/${todayDay}`);
     runCount =1;
     }
   },[])
+  useEffect(() => {
+    const currentMonth = new Date().getMonth();
+    if (currentMonth >= 10 || currentMonth <= 1) {
+      setSelectedData(1)
+    } else {
+      setSelectedData(0)
+    }
+}, [])
+
   const breakfast_consts = [
     "CHOICE OF EGG",
     "CORNFLAKES",
@@ -55,19 +65,19 @@ export default function Home() {
       <div className={mont.className + ' flex flex-col lg:grid lg:grid-cols-3 w-full gap-10 text-black pb-20 xl:pb-40'}>
         <div className=' flex flex-col justify-start items-center p-10 border-4 border-textgreen/50 text-white rounded-xl'>
           <h1 className='text-4xl lg:text-5xl pb-5 font-extrabold text-textgreen'>Breakfast</h1>
-          <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center'>{data[0].B.map((menuitem, key) => (
+          <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center'>{data[selectedData].B.map((menuitem, key) => (
             <h1 key={key}>{menuitem}</h1>
           ))}</div>
         </div>
         <div className=' flex flex-col justify-start items-center p-10 border-4 border-textgreen/50 text-white rounded-xl'>
           <h1 className='text-4xl lg:text-5xl pb-5 font-extrabold text-textgreen'>Lunch</h1>
-          <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center'>{data[0].L.map((menuitem, key) => (
+          <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center'>{data[selectedData].L.map((menuitem, key) => (
             <h1 key={key}>{menuitem}</h1>
           ))}</div>
         </div>
         <div className=' flex flex-col justify-start items-center p-10 border-4 border-textgreen/50 text-white rounded-xl'>
           <h1 className='text-4xl md:text-5xl pb-5 font-extrabold text-textgreen'>Dinner</h1>
-          <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center'>{data[1].D.map((menuitem, key) => (
+          <div className='flex flex-col gap-2 text-base md:text-xl font-medium text-center'>{data[selectedData].D.map((menuitem, key) => (
             <h1 key={key}>{menuitem}</h1>
           ))}</div>
         </div>
