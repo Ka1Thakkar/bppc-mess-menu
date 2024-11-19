@@ -24,11 +24,11 @@ const gc_members = [
     position: "CVR Mess Rep",
     contact: "8126490525",
   },
-  // {
-  //     name : "Himangi Rajvanshi",
-  //     position : "MR Mess Rep",
-  //     contact : "8800853905",
-  // },
+  {
+      name : "Devsari Bali",
+      position : "MB Mess Rep",
+      contact : "9810097764",
+  },
   {
     name: "Vihaan Dev",
     position: "SR Mess Rep",
